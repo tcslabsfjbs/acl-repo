@@ -5,4 +5,4 @@ permissions:
   id-token: write
 jobs:
   build:
-    uses: tcslabsfjbs/gh-actions/hello.yaml@main
+    uses: tcslabsfjbs/gh-actions/.github/workflows/hello.yaml@main
