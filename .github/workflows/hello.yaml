@@ -3,7 +3,7 @@ on: workflow_dispatch
 jobs:
   hello:
     name: hello
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: checkout
         run: |
