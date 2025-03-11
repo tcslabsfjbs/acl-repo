@@ -17,6 +17,7 @@ jobs:
           path: data.txt
   container:
     name: ci container
+    needs: [ build ]
     runs-on: ubuntu-latest
     steps:
       - name: create artifact
