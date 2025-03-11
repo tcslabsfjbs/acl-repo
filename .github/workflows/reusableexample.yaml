@@ -6,3 +6,5 @@ permissions:
 jobs:
   build:
     uses: tcslabsfjbs/gh-actions/.github/workflows/hello.yaml@main
+    with:
+      java_ver: '21'
