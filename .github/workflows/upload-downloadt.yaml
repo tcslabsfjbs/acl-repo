@@ -1,5 +1,9 @@
 name: factstore
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  push: 
+    branches:
+      - main
 jobs:
   build:
     name: ci build
@@ -27,8 +31,9 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: bimal
+          path: target
       - name: cat file
         run: |
           echo ------file-----
           ls -lhtr
-          cat data.txt
+          cat target/data.txt
