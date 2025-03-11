@@ -1,0 +1,8 @@
+name: Workflow reusing
+on: workflow_dispatch
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  build:
+    uses: tcslabsfjbs/gh-actions/hello.yaml@main
