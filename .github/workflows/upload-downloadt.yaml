@@ -27,7 +27,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: bimal
-          path: data.txt
       - name: cat file
         run: |
           echo ------file-----
